@@ -7,4 +7,4 @@ Query the following two values from the STATION table:
 
 -- select ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2) from STATION; -- MySQL
 
-select CAST(ROUND(SUM(LAT_N), 2) AS NUMERIC(8,2)), ROUND(SUM(LONG_W), 2) from STATION; - MS SQL SERVER
+select CAST(ROUND(SUM(LAT_N), 2) AS NUMERIC(7,2)), CAST(ROUND(SUM(LONG_W), 2) AS NUMERIC(7,2)) from STATION; -- MS SQL SERVER
