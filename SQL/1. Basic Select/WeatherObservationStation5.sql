@@ -1,6 +1,9 @@
 /*
-Enter your query here.
-Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+Query the two cities in STATION with the shortest and longest CITY names, as well as their respective 
+lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city,
+choose the one that comes first when ordered alphabetically.
+
+NOTE: Only works with MS SQL Server.
 */
 SELECT TOP 1 CITY, LEN(CITY) FROM STATION ORDER BY LEN(CITY), CITY;
 SELECT TOP 1 CITY, LEN(CITY) FROM STATION ORDER BY LEN(CITY) DESC, CITY ASC;
